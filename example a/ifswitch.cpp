@@ -24,7 +24,5 @@ int main() {
             cout << "Invalid code." << endl;
     }
 
-    system("pause");
-
     return 0;
 }
