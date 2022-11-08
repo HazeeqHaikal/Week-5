@@ -32,9 +32,9 @@ int main() {
             break;
         case 3:
             float radius1, radius2;
-            cout << "Enter the radius of the eclipse: ";
+            cout << "Enter the first radius of the eclipse: ";
             cin >> radius1;
-            cout << "Enter the radius of the eclipse: ";
+            cout << "Enter the second radius of the eclipse: ";
             cin >> radius2;
             area = 3.14 * radius1 * radius2;
             cout << fixed << setprecision(2) << "The area of the eclipse is: " << area << endl;
