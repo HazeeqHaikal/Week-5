@@ -1,13 +1,13 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
 int main() {
-
-    int num1, num2;
+    int num1, num2, temp;
     float total;
     char operations;
+    bool validity = false;
 
     cout << "Enter first integer: ";
     cin >> num1;
@@ -21,22 +21,30 @@ int main() {
     switch (operations) {
         case '+':
             total = num1 + num2;
+            validity = true;
             break;
         case '-':
             total = num1 - num2;
+            validity = true;
             break;
         case '*':
             total = num1 * num2;
+            validity = true;
             break;
         case '/':
             total = (float)num1 / (float)num2;
+            validity = true;
+            break;
+        case '%':
+            validity = true;
+            total = num1 % num2;
             break;
         default:
             cout << "Invalid operation" << endl;
             break;
     }
 
-    if (operations == '+' || operations == '-' || operations == '*' || operations == '/') {
+    if(validity){
         cout << num1 << " " << operations << " " << num2 << " = " << total << endl;
     }
 
