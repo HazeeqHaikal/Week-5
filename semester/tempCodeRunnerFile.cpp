@@ -30,29 +30,21 @@ int main() {
             case 1:
                 if (cgpa >= 3.3) {
                     totalScholarship = 2500 * semester;
-                } else {
-                    cout << "\nYou are not eligible for scholarship" << endl;
                 }
                 break;
             case 2:
                 if (cgpa >= 3.0) {
                     totalScholarship = 3500 * semester;
-                } else {
-                    cout << "\nYou are not eligible for scholarship" << endl;
                 }
                 break;
             case 3:
                 if (cgpa >= 3.3) {
                     totalScholarship = 3000 * semester;
-                } else {
-                    cout << "\nYou are not eligible for scholarship" << endl;
                 }
                 break;
             case 4:
                 if (cgpa >= 3.0) {
                     totalScholarship = 4500 * semester;
-                } else {
-                    cout << "\nYou are not eligible for scholarship" << endl;
                 }
                 break;
             default:
