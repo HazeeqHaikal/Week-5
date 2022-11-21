@@ -15,6 +15,13 @@ int main() {
     cout << "Enter your CGPA: ";
     cin >> cgpa;
 
+    // if (studyType == 1 || studyType == 3) {
+    //     if (cgpa <= 3.3) {
+    //         cout << "You are not eligible for any scholarship" << endl;
+    //         return 1;
+    //     }
+    // }else if()
+
     cout << "Enter the number of semester you want to study: ";
     cin >> semester;
 
@@ -32,6 +39,7 @@ int main() {
                     totalScholarship = 2500 * semester;
                 } else {
                     cout << "\nYou are not eligible for scholarship" << endl;
+                    return 1;
                 }
                 break;
             case 2:
@@ -39,6 +47,7 @@ int main() {
                     totalScholarship = 3500 * semester;
                 } else {
                     cout << "\nYou are not eligible for scholarship" << endl;
+                    return 1;
                 }
                 break;
             case 3:
@@ -46,6 +55,7 @@ int main() {
                     totalScholarship = 3000 * semester;
                 } else {
                     cout << "\nYou are not eligible for scholarship" << endl;
+                    return 1;
                 }
                 break;
             case 4:
@@ -53,13 +63,14 @@ int main() {
                     totalScholarship = 4500 * semester;
                 } else {
                     cout << "\nYou are not eligible for scholarship" << endl;
+                    return 1;
                 }
                 break;
             default:
                 cout << "Invalid study type" << endl;
                 break;
         }
-        cout << "\nTotal scholarship from Yayasan Setia Bakti: RM" << totalScholarship << endl;
+        cout << fixed << setprecision(2) << "\nTotal scholarship from Yayasan Setia Bakti: RM" << totalScholarship << endl;
     } else {
         cout << "\nYou're not qualified for this scholarship" << endl;
     }
